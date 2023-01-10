@@ -1,0 +1,16 @@
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 20px;
+  padding: 50px;
+}
+
+img {
+ height: 650px;
+}
+.cardNueva {
+  background-color: brown;
+}
+.boton {
+  background-color: gray;
+}

@@ -1,0 +1,22 @@
+.contenedor {
+  width: 50%;
+  background-color: white;
+  color: black;
+}
+
+.alinearElementosHorizontal {
+  display: flex;
+  gap: 1rem;
+}
+
+.detalleTotales {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.salir {
+  background-color: gray;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.fijar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.fondoNike {
+  background-image: url("https://img2.goodfon.com/wallpaper/nbig/b/9a/nike-sneakers-sport-shoe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

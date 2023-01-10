@@ -1,0 +1,28 @@
+<h1>Mire nuestro catálogo</h1>
+
+<mat-divider></mat-divider>
+
+
+<div class="tarjetas">
+
+  <mat-card *ngFor="let items of heroe" class="mb-3 cardNueva">
+    <mat-card-header>
+      <mat-card-title>{{items.superhero}}</mat-card-title>
+
+    </mat-card-header>
+
+
+    <img mat-card-image [src]="items | rutasHeroes">
+
+    <mat-card-content>
+      <p><strong>Descripción: </strong> {{items.characters}}</p>
+      <p><strong>Precio: </strong> {{items.first_appearance}}</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button color="danger" (click)="agregarCarro(items)" class="boton">Agregar</button>
+
+    </mat-card-actions>
+  </mat-card>
+
+</div>

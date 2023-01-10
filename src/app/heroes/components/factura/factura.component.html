@@ -1,0 +1,100 @@
+<div class="container contenedor">
+
+  <div class="alinearElementosHorizontal" style="justify-content: space-between;">
+    <div class="alinearElementosHorizontal">
+      <div>Nombres:</div>
+      <div>{{nombreUsuario ?? ""}}</div>
+    </div>
+
+
+    <br>
+
+    <div class="alinearElementosHorizontal">
+
+      <div>Fecha:</div>
+      <div>{{datos?.fecha ?? ""}}</div>
+    </div>
+  </div>
+  <br>
+  <table class="table mb-1">
+    <thead class="thead-dark">
+      <tr>
+
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="data.length > 0">
+      <ng-container *ngFor="let item of data; index as i" formArrayName="listaServicios">
+        <ng-container>
+          <tr>
+
+            <td>
+
+              {{item.id}}
+              <!-- <small>{{item.servicioActivo? item.precioServicio:'NO CUENTAS CON ESTE SERVICIO'}}</small> -->
+            </td>
+
+            <td>
+              {{item.first_appearance}}
+            </td>
+            <td>
+              {{item.cantidad}}
+            </td>
+
+
+
+
+            <!-- <td
+              class="center-in-td"
+              *ngIf="
+                !obtenerValor(i, 'estaDisponible') || mostrarSms
+              "
+            >
+              <div></div>
+            </td> -->
+          </tr>
+        </ng-container>
+      </ng-container>
+    </tbody>
+  </table>
+
+  <br>
+  <div class="detalleTotales">
+    <div class="alinearElementosHorizontal">
+
+      <div>Subtotal:</div>
+      <div>{{datos?.subtotal}}</div>
+    </div>
+
+
+
+    <div class="alinearElementosHorizontal">
+
+      <div>Iva:</div>
+      <div>{{datos?.iva}}</div>
+
+    </div>
+    <div class="alinearElementosHorizontal">
+
+      <div>Total:</div>
+      <div>{{datos?.total}}</div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;" class="mt-2">
+  <button mat-button (click)="limpiarLocalStorage()" class="salir">Salir</button>
+</div>

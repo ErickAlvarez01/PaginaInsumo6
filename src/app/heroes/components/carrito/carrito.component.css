@@ -1,0 +1,29 @@
+td {
+  color: black;
+  width: 20%;
+}
+
+th {
+  color: black;
+  width: 20%;
+}
+img {
+  width: 50%;
+}
+
+.fondoCarro {
+  background-color: rgb(136, 132, 132);
+}
+
+.eliminar {
+  background-color: red;
+  color: white;
+}
+.facturar {
+  background-color: rgb(63, 105, 63);
+}
+
+.actualizar {
+  background-color: rgb(134, 201, 199);
+  color: black;
+}
